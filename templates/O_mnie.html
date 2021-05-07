@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>O mnie - Dawid Gradowski</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona Dawida Gradowskiego, czyli osoby, która w przyszłości chce zostać programistą i zarabiać kokosy  na swojej pasji.">
+    <meta name="keywords" content="developer, programista">
+    <meta name="author" content="Dawid Gradowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='imgs/bzn.png') }}"/>
+    <script src="https://kit.fontawesome.com/fbae0fc402.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <img src="{{ url_for('static',filename='imgs/Logo_strona.png') }}" id="logo">
+                <div id="header-right">
+                <h1>😎 <span class="light-blue">=</span> <span class="blue">DawidGradowski</span>()</h1>
+                <p><span class="light-blue">print</span>(😎.<span class="blue">Header</span>)</p>
+                <p>>> Uczeń technikum, pasjonat programowania, przyszły developer</p>
+            </div>
+        </div>
+    </header>
+    <nav id="nav-poziom">
+        <ul>
+            <li id='explorer'>EXPLORER</li>
+            <a href="/"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Strona_główna.html
+            </li></a>
+            <li  id="obecna">
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                O_mnie.html
+            </li>
+            <a href="/Kox_rzeczy.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kox_rzeczy.html
+            </li></a>
+            <a href="/Kontakt.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kontakt.html
+            </li></a>
+            <a href="/Program.html"><li>
+                <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                Program.py
+            </li></a>
+        </ul>
+    </nav>
+    <div id="content">
+        <nav id="nav-pion">
+            <ul>
+                <a href="/"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Strona_główna.html
+                </li></a>
+                <li  id="obecna">
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    O_mnie.html
+                </li>
+                <a href="/Kox_rzeczy.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kox_rzeczy.html
+                </li></a>
+                <a href="/Kontakt.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kontakt.html
+                </li></a>
+                <a href="/Program.html"><li>
+                    <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                    Program.py
+                </li></a>
+            </ul>
+        </nav>
+        <section>
+            <h1><span class="light-blue">print</span>(😎.<span class="blue">O_mnie</span>)</h1>
+            <h2>Kim jestem?</h2>
+            <p>
+                >> Jestem Dawid Gradowski, w sumie nic specjalnego. Chodzę do technikum do klasy informatycznej. Na codzień marnuje czas, narzekam że muszę chodzić do szkoły, jem jedzenie i śpie.
+            </p><br>
+            <h2>Języki programowania</h2>
+            <p>
+                >> Mimo, że jestem w klasie informatycznej, to generalnie same komputery mnie nie interesują. Interesuje mnie jednak programowanie oraz tworzenie stron internetowych. Samym programowaniem zacząłem interesować się w 5 klasie podstawówki i wtedy zacząłem uczyć się pierwszych języków programowania. Pierwszym językiem był C++ jednak nie zrozumiałem go zbyt dobrze i po kilku poradnikach porzuciłem naukę. Następnie zacząłem uczyć się HTML'a oraz CSS'ów. Rozumiałem je znacznie lepiej oraz wiele się wtedy nauczyłem. Czułem jednak, że tworzenie stron nie jest tak ekscytujące jak pisanie programów. Po zakończeniu klasy 6 próbowałem się nauczyć wielu języków programowania, były to m.in. Ruby oraz Java. Niestety, próba nauki zwykle kończyła się na podstawach, ponieważ brakowało mi czasu i zapału. Od 2 klasy technikum zacząłem się uczyć języka Python oraz projektowania stron na zajęciach szkolnych i są to jedne z niewielu zajęć, które na prawdę lubie oraz jestem w topce najlepszych uczniów z tych zajęć.
+            </p><br>
+            <h2>Inne hobby</h2>
+            <p>
+                >> Moim hobby są również gry komputerowe. Grą na którą poświęciłem najwięcej czasu jest Liga Legend w której jestem hardstuckiem w goldzie, jednak nie przeszkadza mi to. (Tak na prawdę mi to przeszkadza i chcę wbić platyne :C).
+                <br>
+                Dużą część swojego wolnego czasu poświęciłem na oglądanie japońskich animacji. Według mnie, niektóre anime, np. <a href="https://myanimelist.net/anime/33/Kenpuu_Denki_Berserk?q=Berse&cat=anime">Berserk z 1997</a> jest dziełem sztuki, który powinien obejrzeć każdy. Niestety anime to jest tylko skrawkiem niesamowitej historii przedstawionej w mandzie <a href="https://myanimelist.net/manga/2/Berserk">Berserk wydawanej od 1989</a>, którą też gorąco polecam
+                <br>
+                Okazjonalnie lubię sobie zagrać w szachy i przegrać partie.
+            </p><br>
+            <h2>Ważne info</h2>
+            <p>
+                >> Mam 2 zwierzaki i są to giga kozaki. Mam kocice która zwie się Kitka oraz psa który zwie się Gerald. Warto podkreślić, że są to giga koksy.
+            </p>
+        </section>
+    </div>
+    <footer><p>Autorem jest Dawid Gradowski<sup>&copy</sup> B)</p></footer>
+</body>
+</html>

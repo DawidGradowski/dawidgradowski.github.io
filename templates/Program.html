@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Program - Dawid Gradowski</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona Dawida Gradowskiego, czyli osoby, która w przyszłości chce zostać programistą i zarabiać kokosy  na swojej pasji.">
+    <meta name="keywords" content="developer, programista">
+    <meta name="author" content="Dawid Gradowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='imgs/bzn.png') }}"/>
+    <script src="https://kit.fontawesome.com/fbae0fc402.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <img src="{{ url_for('static',filename='imgs/Logo_strona.png') }}" id="logo">
+                <div id="header-right">
+                <h1>😎 <span class="light-blue">=</span> <span class="blue">DawidGradowski</span>()</h1>
+                <p><span class="light-blue">print</span>(😎.<span class="blue">Header</span>)</p>
+                <p>>> Uczeń technikum, pasjonat programowania, przyszły developer</p>
+            </div>
+        </div>
+    </header>
+    <nav id="nav-poziom">
+        <ul>
+            <li id='explorer'>EXPLORER</li>
+            <a href="/"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Strona_główna.html
+            </li></a>
+            <a href="/O_mnie.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                O_mnie.html
+            </li></a>
+            <a href="/Kox_rzeczy.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kox_rzeczy.html
+            </li></a>
+            <a href="/Kontakt.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kontakt.html
+            </li></a>
+            <li  id="obecna">
+                <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                Program.py
+            </li>
+        </ul>
+    </nav>
+    <div id="content">
+        <nav id="nav-pion">
+            <ul>
+                <a href="/"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Strona_główna.html
+                </li></a>
+                <a href="/O_mnie.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    O_mnie.html
+                </li></a>
+                <a href="/Kox_rzeczy.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kox_rzeczy.html
+                </li></a>
+                <a href="/Kontakt.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kontakt.html
+                </li></a>
+                <li  id="obecna">
+                    <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                    Program.py
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <h1><span class="light-blue">print</span>(😎.<span class="blue">Program</span>)</h1>
+            <center><h2>GENERATOR HASEŁ B)</h2></center>
+            <br>
+            <h3>Co ma zawierać hasło?</h3>
+            <form action="#" method="post" id="program-form">
+                <div class="program-options">
+                    <label for="lm">Litery małe: </label>
+                    <input type="checkbox" name="lm" value="lm"><br>
+                </div>
+                <div class="program-options">
+                    <label for="ld">Litery duże: </label>
+                    <input type="checkbox" name="ld" value="ld"><br>
+                </div>
+                <div class="program-options">
+                    <label for="liczby">Liczby: </label>
+                    <input type="checkbox" name="liczby" value="liczby"><br>
+                </div>
+                <div class="program-options">
+                    <label for="znaki">Znaki specjalne: </label>
+                    <input type="checkbox" name="znaki" value="znaki"><br>
+                </div>
+                <div class="program-options">
+                    <input type="submit" value="Generuj hasło" id="generate-button">
+                </div>
+            </form>
+            <h2 id="pass-header"> Twoje hasło:</h2>
+            <p id="your-pass">{{ password }}</p>
+        </section>
+    </div>
+    <footer><p>Autorem jest Dawid Gradowski<sup>&copy</sup> B)</p></footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Kox rzeczy - Dawid Gradowski</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona Dawida Gradowskiego, czyli osoby, która w przyszłości chce zostać programistą i zarabiać kokosy  na swojej pasji.">
+    <meta name="keywords" content="developer, programista">
+    <meta name="author" content="Dawid Gradowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='imgs/bzn.png') }}"/>
+    <script src="https://kit.fontawesome.com/fbae0fc402.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <img src="{{ url_for('static',filename='imgs/Logo_strona.png') }}" id="logo">
+                <div id="header-right">
+                <h1>😎 <span class="light-blue">=</span> <span class="blue">DawidGradowski</span>()</h1>
+                <p><span class="light-blue">print</span>(😎.<span class="blue">Header</span>)</p>
+                <p>>> Uczeń technikum, pasjonat programowania, przyszły developer</p>
+            </div>
+        </div>
+    </header>
+    <nav id="nav-poziom">
+        <ul>
+            <li id='explorer'>EXPLORER</li>
+            <a href="/"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Strona_główna.html
+            </li></a>
+            <a href="/O_mnie.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                O_mnie.html
+            </li></a>
+            <li  id="obecna">
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kox_rzeczy.html
+            </li>
+            <a href="/Kontakt.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kontakt.html
+            </li></a>
+            <a href="/Program.html"><li>
+                <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                Program.py
+            </li></a>
+        </ul>
+    </nav>
+    <div id="content">
+        <nav id="nav-pion">
+            <ul>
+                <a href="/"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Strona_główna.html
+                </li></a>
+                <a href="/O_mnie.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    O_mnie.html
+                </li></a>
+                <li id="obecna">
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kox_rzeczy.html
+                </li>
+                <a href="/Kontakt.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kontakt.html
+                </li></a>
+                <a href="/Program.html"><li>
+                    <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                    Program.py
+                </li></a>
+            </ul>
+        </nav>
+        <section>
+            <h1><span class="light-blue">print</span>(😎.<span class="blue">Kox_rzeczy</span>)</h1>
+            <h2>Zdjęcia kozaków:</h2>
+            <table>
+                <tr>
+                    <td><img src="{{ url_for('static',filename='imgs/grid-image1.jpg') }}"><p>Norman wesoły</p></td>
+                    <td><img src="{{ url_for('static',filename='imgs/grid-image2.jpg') }}"><p>Norman wesoły bardziej</p></td>
+                    <td><img src="{{ url_for('static',filename='imgs/grid-image3.jpg') }}"><p>Norman smutny</p></td>
+                </tr>
+                <tr>
+                    <td><img src="{{ url_for('static',filename='imgs/grid-image4.jpg') }}"><p>Guts (Berserk) wesoły</p></td>
+                    <td><img src="{{ url_for('static',filename='imgs/grid-image5.jpg') }}"><p>Griffith wesoły</p></td>
+                    <td><img src="{{ url_for('static',filename='imgs/grid-image6.jpg') }}"><p>Guts zdziwiony</p></td>
+                </tr>
+            </table>
+            <br>
+            <h2>Kox nutka: "Theme of Guts" (Berserk)</h2>
+            <iframe width="894" height="503" src="https://www.youtube.com/embed/w1o4O2SfQ5g" frameborder="0"></iframe>
+            
+        </section>
+    </div>
+    <footer><p>Autorem jest Dawid Gradowski<sup>&copy</sup> B)</p></footer>
+</body>
+</html>

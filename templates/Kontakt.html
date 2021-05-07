@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Kontakt - Dawid Gradowski</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona Dawida Gradowskiego, czyli osoby, która w przyszłości chce zostać programistą i zarabiać kokosy  na swojej pasji.">
+    <meta name="keywords" content="developer, programista">
+    <meta name="author" content="Dawid Gradowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='imgs/bzn.png') }}"/>
+    <script src="https://kit.fontawesome.com/fbae0fc402.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <img src="{{ url_for('static',filename='imgs/Logo_strona.png') }}" id="logo">
+                <div id="header-right">
+                <h1>😎 <span class="light-blue">=</span> <span class="blue">DawidGradowski</span>()</h1>
+                <p><span class="light-blue">print</span>(😎.<span class="blue">Header</span>)</p>
+                <p>>> Uczeń technikum, pasjonat programowania, przyszły developer</p>
+            </div>
+        </div>
+    </header>
+    <nav id="nav-poziom">
+        <ul>
+            <li id='explorer'>EXPLORER</li>
+            <a href="/"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Strona_główna.html
+            </li></a>
+            <a href="/O_mnie.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                O_mnie.html
+            </li></a>
+            <a href="/Kox_rzeczy.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kox_rzeczy.html
+            </li></a>
+            <li id="obecna">
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kontakt.html
+            </li>
+            <a href="/Program.html"><li>
+                <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                Program.py
+            </li></a>
+        </ul>
+    </nav>
+    <div id="content">
+        <nav id="nav-pion">
+            <ul>
+                <a href="/"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Strona_główna.html
+                </li></a>
+                <a href="/O_mnie.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    O_mnie.html
+                </li></a>
+                <a href="/Kox_rzeczy.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kox_rzeczy.html
+                </li></a>
+                <li id="obecna">
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kontakt.html
+                </li>
+                <a href="/Program.html"><li>
+                    <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                    Program.py
+                </li></a>
+            </ul>
+        </nav>
+        <section>
+            <h1><span class="light-blue">print</span>(😎.<span class="blue">Kontakt</span>)</h1>
+            <h2>Kiedy warto się ze mną skontaktować:</h2>
+            <ol>
+                <li>Na mojej stronie jest błąd (inny niż brak responsywności (o tym doskonale sam wiem))</li>
+                <li>Czegoś odemnie potrzebujesz.</li>
+                <li>Martwi cie sytuacja ekonomiczna w Wenezueli.</li>
+            </ol><br>
+            <h2>Kontakt:</h2>
+            <form action="mailto:d.gradowski23@gmail.com" method="post">
+                <label for="imie">Imię:</label><br>
+                <input class="form-text" type="text" id="imie" name="imie"><br>
+                <label for="nazwisko">Nazwisko:</label><br>
+                <input class="form-text" type="text" id="nazwisko" name="nazwisko"><br>
+                <p>Jaki cel kontatku?</p>
+                <input type="radio" id="blad" name="powod" value="blad">
+                <label for="blad">Znalazłem/am błąd na stronie.</label><br>
+                <input type="radio" id="potrzeba" name="powod" value="potrzeba">
+                <label for="potrzeba">Czegoś potrzebuje.</label><br>
+                <input type="radio" id="inny" name="powod" value="inny">
+                <label for="inny">Inny</label><br>
+                <label for="opis">Opisz swój problem:</label><br>
+                <textarea class="form-text" name="opis" cols="75" rows="20"></textarea><br>
+                    
+                <input id="przycisk" type="submit" value="Wyślij">
+            </form>
+        </section>
+    </div>
+    <footer><p>Autorem jest Dawid Gradowski<sup>&copy</sup> B)</p></footer>
+</body>
+</html>

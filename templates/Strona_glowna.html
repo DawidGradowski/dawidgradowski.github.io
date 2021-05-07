@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Strona główna - Dawid Gradowski</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strona Dawida Gradowskiego, czyli osoby, która w przyszłości chce zostać programistą i zarabiać kokosy  na swojej pasji.">
+    <meta name="keywords" content="developer, programista">
+    <meta name="author" content="Dawid Gradowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static',filename='imgs/bzn.png') }}"/>
+    <script src="https://kit.fontawesome.com/fbae0fc402.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div id="header">
+            <img src="{{ url_for('static',filename='imgs/Logo_strona.png') }}" id="logo">
+                <div id="header-right">
+                <h1>😎 <span class="light-blue">=</span> <span class="blue">DawidGradowski</span>()</h1>
+                <p><span class="light-blue">print</span>(😎.<span class="blue">Header</span>)</p>
+                <p>>> Uczeń technikum, pasjonat programowania, przyszły developer</p>
+            </div>
+        </div>
+    </header>
+    <nav id="nav-poziom">
+        <ul>
+            <li id='explorer'>EXPLORER</li>
+            <a><li id="obecna">
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Strona_główna.html
+            </li></a>
+            <a href="/O_mnie.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                O_mnie.html
+            </li></a>
+            <a href="/Kox_rzeczy.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kox_rzeczy.html
+            </li></a>
+            <a href="/Kontakt.html"><li>
+                <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                Kontakt.html
+            </li></a>
+            <a href="/Program.html"><li>
+                <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                Program.py
+            </li></a>
+        </ul>
+    </nav>
+    <div id="content">
+        <nav id="nav-pion">
+            <ul>
+                <li id="obecna">
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Strona_główna.html
+                </li>
+                <a href="/O_mnie.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    O_mnie.html
+                </li></a>
+                <a href="/Kox_rzeczy.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kox_rzeczy.html
+                </li></a>
+                <a href="/Kontakt.html"><li>
+                    <i class="fab fa-html5" style="color:orange; font-size:15px;"></i>
+                    Kontakt.html
+                </li></a>
+                <a href="/Program.html"><li>
+                    <i class="fab fa-python" style="color:#519ABA; font-size:15px;"></i>
+                    Program.py
+                </li></a>
+            </ul>
+        </nav>
+        <section>
+            <h1><span class="light-blue">print</span>(😎.<span class="blue">Strona_główna</span>)</h1>
+            <h2>Co to za strona?</h2>
+            <p>
+                >> Jest to strona poświęcona głównie mojej osobie, w sumie nic specjalnego.
+            </p><br>
+            <h2>Czemu strona wygląda tak dziwnie.</h2>
+            <p>
+                >> W przyszłości chce zostać developerem, więc postanowaiłem, że strone o mnie upodobnie do programu Visual Studio Code, którego wykorzystuje podczas pisania kodu. Same "komendy" mają imitować te z języka programowania Python, poniważ jest to język, który aktualnie najbardziej rozumiem.
+            </p><br>
+            <h2>Mój Visual Studio Code:</h2>
+            <img src="{{ url_for('static', filename='imgs/VSC.png') }}">
+        </section>
+    </div>
+    <footer><p>Autorem jest Dawid Gradowski<sup>&copy</sup> B)</p></footer>
+</body>
+</html>
